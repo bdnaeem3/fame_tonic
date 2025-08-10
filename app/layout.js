@@ -1,8 +1,13 @@
-import { Urbanist } from "next/font/google";
+import { Urbanist, Figtree } from "next/font/google";
 import "./globals.css";
 
 const urbanistFont = Urbanist({
   variable: "--font-urbanist",
+  subsets: ["latin"],
+});
+
+const figtreeFont = Figtree({
+  variable: "--font-figtree",
   subsets: ["latin"],
 });
 
@@ -14,7 +19,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${urbanistFont.variable} antialiased`}>{children}</body>
+      <body
+        className={`${urbanistFont.variable} ${figtreeFont.variable} antialiased`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
