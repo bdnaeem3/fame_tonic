@@ -6,6 +6,8 @@ const Hero = () => {
     <section className="mt-[57px] pb-10 md:pb-[82px] px-5">
       <div className="max-w-[978px] mx-auto">
         <div className="flex flex-col-reverse relative">
+
+          {/* Left Content part */}
           <div className="max-w-[516px] relative z-[1] mx-auto md:mx-0">
             <h2 className="font-urbanist font-bold text-[25px] md:text-[35px] leading-[30px] md:leading-[42px] text-white text-center md:text-left">
               Want to Turn Social Media Into a Profitable Career?
@@ -51,6 +53,7 @@ const Hero = () => {
             </div>
           </div>
 
+          {/* Mobile app view Image */}
           <div className="relative md:absolute md:right-0 lg:-right-5 xl:-right-[110px] -top-15 md:-top-[86px]">
             <Image
               src={"/app_view.webp"}

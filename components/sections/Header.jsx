@@ -14,6 +14,7 @@ const Header = () => {
     setOpenToggle((prev) => !prev);
   };
 
+  // checking if click is outside of header to close the mobile menu
   useEffect(() => {
     if (!openToggle) return;
 
@@ -33,16 +34,21 @@ const Header = () => {
     <header className="mt-[16px] md:mt-[35px] px-5" ref={headerRef}>
       <div className="relative z-[1] max-w-[978px] mx-auto">
         <div className="flex items-center md:items-start justify-between">
+
+          {/* Blank area for mobile responsive design */}
           <div className="md:hidden"></div>
 
+          {/* Logo */}
           <Link href={"#"} className="max-w-[107px] md:max-w-full">
             <Image src={"/logo.svg"} alt="Fame Tonic" height={74} width={173} />
           </Link>
 
+          {/* Mobile Toggle Menu Icon */}
           <div className="md:hidden">
             <Icon name="toggle" onClick={toggleHandler} />
           </div>
 
+          {/* Desktop Menus */}
           <div className="hidden md:flex gap-10">
             <Link
               href={"#"}
@@ -58,6 +64,8 @@ const Header = () => {
             </Link>
           </div>
         </div>
+
+        {/* Mobile Menus */}
         <div className="md:hidden">
           {openToggle ? (
             <div className="flex flex-col py-3 gap-3 bg-[#010101] absolute top-[100%] left-0 w-full">
