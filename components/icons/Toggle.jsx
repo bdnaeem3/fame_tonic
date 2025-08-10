@@ -13,8 +13,8 @@ export default ({ color, ...rest }) => (
       x2="19"
       y2="1.03597"
       stroke={color || "white"}
-      stroke-width="2"
-      stroke-linecap="round"
+      strokeWidth="2"
+      strokeLinecap="round"
     />
     <line
       x1="1"
@@ -22,8 +22,8 @@ export default ({ color, ...rest }) => (
       x2="19"
       y2="7.03597"
       stroke={color || "white"}
-      stroke-width="2"
-      stroke-linecap="round"
+      strokeWidth="2"
+      strokeLinecap="round"
     />
     <line
       x1="1"
@@ -31,8 +31,8 @@ export default ({ color, ...rest }) => (
       x2="19"
       y2="13.036"
       stroke={color || "white"}
-      stroke-width="2"
-      stroke-linecap="round"
+      strokeWidth="2"
+      strokeLinecap="round"
     />
   </svg>
 );
