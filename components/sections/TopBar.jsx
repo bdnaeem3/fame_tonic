@@ -1,11 +1,13 @@
 const TopBar = () => {
   return (
-    <div className="bg-[linear-gradient(90deg,#FC004E_0%,#10CBE0_100%)] py-[10px] px-5 font-figtree font-extrabold text-[22px] text-white text-center">
+    <section className="bg-[linear-gradient(90deg,#FC004E_0%,#10CBE0_100%)] py-[10px] px-5 font-figtree font-extrabold text-[22px] text-white text-center">
       <h2>
-        <span className="text-[#00E7F9] uppercase mr-1">🚀 FRESH BEGINNINGS SALE:</span>
+        <span className="text-[#00E7F9] uppercase mr-1">
+          🚀 FRESH BEGINNINGS SALE:
+        </span>
         Extra 25% OFF, Limited Spots - start your journey today!
       </h2>
-    </div>
+    </section>
   );
 };
 
